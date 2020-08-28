@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} <title>Home</title> {% endblock %}
+
+{% block nav %} 
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'mostrarP' %}">Mostrar Productos</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<b> SOY HOME</b>
+{% endblock %}
