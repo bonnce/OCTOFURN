@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Home,name="home"),
     path('mostrarP',views.MostrarP,name="mostrarP"),
+    path('Clientes/',include('apps.Clientes.urls'))
 ]

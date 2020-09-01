@@ -25,7 +25,7 @@ SECRET_KEY = 'e#iwfp!*udivjbsao6o=%f1(r+gy==^c=k0kd(t!is32*u8n&2'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-
+CSRF_COOKIE_SECURE=True
 # Application definition
 
 INSTALLED_APPS = [
@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
+    'apps.Clientes'
 ]
 
 MIDDLEWARE = [

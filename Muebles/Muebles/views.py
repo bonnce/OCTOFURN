@@ -4,4 +4,4 @@ def Home(request):
     return render(request,"home.html")
 
 def MostrarP(request):
-    return render(request,"mostrarProductos.html")
+    return render(request,"mostrarProductos.html",{'Pestado':True})
