@@ -20,6 +20,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Home,name="home"),
-    path('mostrarP',views.MostrarP,name="mostrarP"),
-    path('Clientes/',include('apps.Clientes.urls'))
+    path('Clientes/',include('apps.Clientes.urls')),
+    path('CRUD/',include('apps.CRUD.urls')),
+    path('Productos/',include('apps.Productos.urls')),
+    path('Pedidos/',include('apps.Pedidos.urls')),
+    path('Insumos/',include('apps.Insumos.urls')),
+    path('Herramientas/',include('apps.Herramientas.urls')),
+    path('Proveedores/',include('apps.Proveedores.urls')),
 ]

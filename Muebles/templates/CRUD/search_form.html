@@ -1,0 +1,4 @@
+<form class="form-inline my-2 my-lg-0 js-search-form" action="{% url path 'buscar' %}" method="GET" >
+    {% csrf_token %}
+    <input class="form-control w-100" type="search" placeholder="Buscar" name="b" aria-label="Buscar">
+</form>

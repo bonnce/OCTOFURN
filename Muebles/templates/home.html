@@ -17,10 +17,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link {% if Pestado %} active {% endif %}" href="{% url 'mostrarP' %}">Productos<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
-            </li>
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Clientes:CR' 'mostrar' %}">Clientes<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+        </li>
         <li class="nav-item">
-            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Clientes:mostrarC' %}">Clientes<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Pedidos:CR' 'mostrar' %}">Pedidos<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Productos:CR' 'mostrar' %}">Productos<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Insumos:CR' 'mostrar' %}">Insumos<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Herramientas:CR' 'mostrar' %}">Herramientas<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if Cestado %} active {% endif %}" href="{% url 'Proveedores:CR' 'mostrar' %}">Proveedores<span class="sr-only">{% if Pestado %} (current) {% endif %}</span></a>
         </li>
         </ul>
     </div>
